@@ -1,4 +1,3 @@
-# filepath: /home/m4lagon/development/leetcode-solvings/.github/workflows/cpplint.yml
 name: Lint with cpplint 🚦
 
 on:
