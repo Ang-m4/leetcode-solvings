@@ -27,6 +27,12 @@ I maintain this repository to:
 
 Feel free to browse through the solutions if you're looking for different approaches to LeetCode problems!
 
+## Solved Problems
+
+| #   | Name                | Languages        | Difficulty |
+|-----|---------------------|------------------|------------|
+| 12  | Integer to Roman    | Python           | Medium     |
+
 ## Note
 
 These are personal solutions and may not always represent the most optimal approach. I'm always learning and improving!
