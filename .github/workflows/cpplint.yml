@@ -1,0 +1,36 @@
+# filepath: /home/m4lagon/development/leetcode-solvings/.github/workflows/cpplint.yml
+name: Lint with cpplint 🚦
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**/*.cpp'
+  pull_request:
+    branches:
+      - '**'
+    paths:
+      - '**/*.cpp'
+
+jobs:
+  cpplint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install cpplint
+        run: |
+          python -m pip install --upgrade pip
+          pip install cpplint
+
+      - name: Run cpplint
+        run: |
+          cpplint --filter=-legal/copyright $(git ls-files '*.cpp')

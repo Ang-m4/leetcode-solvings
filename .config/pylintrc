@@ -1,0 +1,19 @@
+[MASTER]
+ignore=venv
+
+[MESSAGES CONTROL]
+disable=
+    C0103,  # invalid-name
+    C0115,  # missing-class-docstring
+    C0116,  # missing-function-docstring
+    R0205,  # useless-object-inheritance
+    R0903,  # too-few-public-methods
+
+[FORMAT]
+max-line-length=100
+
+[BASIC]
+variable-rgx=[a-z_][a-z0-9_]{0,30}$
+function-rgx=[a-z_][a-z0-9_]{2,30}$
+class-rgx=[A-Z][a-zA-Z0-9]+$
+
