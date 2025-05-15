@@ -25,7 +25,7 @@ class Solution(object):
 
         for power in potencies:
             # Gets the digit at the current power (e.g. 4532, power=1000 -> 4)
-            digit = int(num / power)
+            digit = num // power
              # Gets the value at the current power (e.g. 4*1000=4000)
             power_digit = digit * power
             # Removes the processed digit from num (e.g. 4532 % 1000 = 532)
